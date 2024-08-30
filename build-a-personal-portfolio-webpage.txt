@@ -1,0 +1,138 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul><a href="#projects">Work</a></ul>
+      <ul><a href="#contacts">Profiles</a></ul>
+    </nav>
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey there, I am Afifah</h1>
+      <p>Nice to meet you (─‿─)</p>
+    </section>
+    <section id="projects" class="projects">
+      <h1>These are some of my works</h1>
+      <div><a class="project-tile" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page">Tribute Page</a></div>
+      <div><a class="project-tile" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">Survey Form</a></div>
+      <div><a class="project-tile" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page">Product Landing Page</a></div>
+    </section>
+    <section class="contacts">
+      <h1>Check out my other profiles</h1>
+      <div>
+        <ul><a id="profile-link" href="https://github.com/Ohalu909" target="_blank">Github</a></ul>
+      <ul><a id="profile-link" href="http://www.linkedin.com/in/afifah-abdul-halim-534074224" target="_blank">Linkedin</a></ul>
+      </div>
+      </section>
+  </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --section-color: #f5cac3;
+  --background-color: #84a59d;
+  --navbar-color:  #f7ede2;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--navbar-color); 
+  color: white;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  /*margin-top: 10rem;*/
+  font-family: Arial;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 100px) {
+  body {
+    background-color: var(--background-color);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#navbar a {
+  color: #f28482;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+}
+
+.welcome-section {
+  background-color: var(--section-color);
+  width: 100%;
+  height: 50%;
+  padding: 100px;
+  font-size: 30px;
+}
+
+.projects {
+  padding: 50px;
+}
+
+.projects div {
+  line-height: 50px;
+  width: 100%;
+}
+
+.contacts {
+  background-color: var(--section-color);
+  width: 100%;
+  height: 20%;
+  padding: 100px;  
+}
+
+.contacts div {
+  line-height: 40px;
+}
+
+.contacts h1 {
+  font-size: 30px;
+}
+
+
+** end of undefined **
+
